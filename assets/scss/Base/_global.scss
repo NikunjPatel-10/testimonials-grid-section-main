@@ -8,11 +8,15 @@
 html,
 body {
     height: 100%;
-    width: 100%;  
+    width: 100%; 
+    font-family: 'Barlow', sans-serif;
+   
 }
 
 body {
-    overflow: hidden; 
+    overflow: hidden;
+    font-size: 13px ; 
+   
 }
 
 .d-flex {
@@ -36,4 +40,7 @@ body {
 }
 .w-100{
     width: 100%;
+}
+.overflow-auto{
+    overflow: auto;
 }
