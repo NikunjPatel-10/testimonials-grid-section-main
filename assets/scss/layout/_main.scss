@@ -10,50 +10,6 @@
     grid-template-rows: repeat(2, 1fr);
 
 }
-
-.card-wrapper {
-    margin: 20px;
-
-    figure {
-        height: 35px;
-        width: 35px;
-
-        img {
-            height: auto;
-            width: 100%;
-            border-radius: 50%;
-            overflow: hidden;
-        }
-    }
-
-    .detail {
-        margin-left: 15px;
-
-        .detail-name {
-            color: hsl(210, 46%, 95%)
-        }
-
-        .detail-info {
-            color: hsl(0, 0%, 81%);
-        }
-
-    }
-
-    .info-detail {
-        font-size: 20px;
-        color: hsl(210, 46%, 95%);
-        margin-top: 15px;
-        font-weight: 600;
-    }
-
-    .info-description {
-        color: hsl(0, 0%, 81%);
-        margin-top: 15px;
-        line-height: 20px;
-     
-    }
-}
-
 .card-1 {
     grid-column-start: 1;
     grid-column-end: 3;
@@ -87,23 +43,6 @@
     background-color: hsl(0, 0%, 100%);
     margin: 15px;
     border-radius: 10px;
-
-    .card-wrapper {
-        .detail {
-            .detail-name {
-                color: hsl(220deg 4% 41%)
-            }
-        }
-
-        .info-detail {
-            color: hsl(210deg 11% 31%);
-            font-weight: 600;
-        }
-
-        .info-description {
-            color: hsl(192deg 3% 69%);
-        }
-    }
 }
 
 .card-4 {
@@ -123,11 +62,61 @@
     background-color: hsl(0, 0%, 100%);
     margin: 15px;
     border-radius: 10px;
+}
 
-    .card-wrapper {
+.card-wrapper {
+    margin: 30px;
+
+    figure {
+        height: 35px;
+        width: 35px;
+
+        img {
+            height: auto;
+            width: 100%;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+    }
+
+    .detail {
+        margin-left: 15px;
+
+        .detail-name {
+            color: hsl(210, 46%, 95%)
+        }
+
+        .detail-info {
+            color: hsl(210, 46%, 95%);
+            opacity: 50%;
+        }
+
+    }
+
+    .info-detail {
+        font-size: 20px;
+        color: hsl(210, 46%, 95%);
+        margin-top: 15px;
+        font-weight: 600;
+    }
+
+    .info-description {
+        color:hsl(210, 46%, 95%);
+        opacity: 70%;
+        margin-top: 15px;
+        line-height: 20px;
+     
+    }
+}
+.card-white{
+    
         .detail {
             .detail-name {
                 color: hsl(220deg 4% 41%)
+            }
+            .detail-info{
+                color:hsl(220deg 4% 41%);
+                opacity: 50%;
             }
         }
 
@@ -137,19 +126,17 @@
         }
 
         .info-description {
-            color: hsl(192deg 3% 69%);
+            color:  hsl(210deg 11% 31%);
+            opacity: 70%;
         }
-    }
+    
 }
-
-
-
 @media only screen and (max-width:1440px) {
 
     .container {
         display: grid;
         height: 70%;
-        width: 90%;
+        width: 85%;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
         // grid-row-gap:15px;

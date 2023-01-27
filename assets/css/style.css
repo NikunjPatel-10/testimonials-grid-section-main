@@ -56,40 +56,6 @@ body {
   grid-template-rows: repeat(2, 1fr);
 }
 
-.card-wrapper {
-  margin: 20px;
-}
-.card-wrapper figure {
-  height: 35px;
-  width: 35px;
-}
-.card-wrapper figure img {
-  height: auto;
-  width: 100%;
-  border-radius: 50%;
-  overflow: hidden;
-}
-.card-wrapper .detail {
-  margin-left: 15px;
-}
-.card-wrapper .detail .detail-name {
-  color: hsl(210deg, 46%, 95%);
-}
-.card-wrapper .detail .detail-info {
-  color: hsl(0deg, 0%, 81%);
-}
-.card-wrapper .info-detail {
-  font-size: 20px;
-  color: hsl(210deg, 46%, 95%);
-  margin-top: 15px;
-  font-weight: 600;
-}
-.card-wrapper .info-description {
-  color: hsl(0deg, 0%, 81%);
-  margin-top: 15px;
-  line-height: 20px;
-}
-
 .card-1 {
   grid-column-start: 1;
   grid-column-end: 3;
@@ -122,16 +88,6 @@ body {
   margin: 15px;
   border-radius: 10px;
 }
-.card-3 .card-wrapper .detail .detail-name {
-  color: hsl(220deg, 4%, 41%);
-}
-.card-3 .card-wrapper .info-detail {
-  color: hsl(210deg, 11%, 31%);
-  font-weight: 600;
-}
-.card-3 .card-wrapper .info-description {
-  color: hsl(192deg, 3%, 69%);
-}
 
 .card-4 {
   grid-column-start: 2;
@@ -151,22 +107,64 @@ body {
   margin: 15px;
   border-radius: 10px;
 }
-.card-5 .card-wrapper .detail .detail-name {
+
+.card-wrapper {
+  margin: 30px;
+}
+.card-wrapper figure {
+  height: 35px;
+  width: 35px;
+}
+.card-wrapper figure img {
+  height: auto;
+  width: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.card-wrapper .detail {
+  margin-left: 15px;
+}
+.card-wrapper .detail .detail-name {
+  color: hsl(210deg, 46%, 95%);
+}
+.card-wrapper .detail .detail-info {
+  color: hsl(210deg, 46%, 95%);
+  opacity: 50%;
+}
+.card-wrapper .info-detail {
+  font-size: 20px;
+  color: hsl(210deg, 46%, 95%);
+  margin-top: 15px;
+  font-weight: 600;
+}
+.card-wrapper .info-description {
+  color: hsl(210deg, 46%, 95%);
+  opacity: 70%;
+  margin-top: 15px;
+  line-height: 20px;
+}
+
+.card-white .detail .detail-name {
   color: hsl(220deg, 4%, 41%);
 }
-.card-5 .card-wrapper .info-detail {
+.card-white .detail .detail-info {
+  color: hsl(220deg, 4%, 41%);
+  opacity: 50%;
+}
+.card-white .info-detail {
   color: hsl(210deg, 11%, 31%);
   font-weight: 600;
 }
-.card-5 .card-wrapper .info-description {
-  color: hsl(192deg, 3%, 69%);
+.card-white .info-description {
+  color: hsl(210deg, 11%, 31%);
+  opacity: 70%;
 }
 
 @media only screen and (max-width: 1440px) {
   .container {
     display: grid;
     height: 70%;
-    width: 90%;
+    width: 85%;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
